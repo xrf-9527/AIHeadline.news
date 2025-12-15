@@ -45,7 +45,7 @@ jobs:
           SOURCE_NEWS_FETCH_RETRIES: 4
 
       - name: Restore Hugo cache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ./.cache/hugo_cache
           key: ${{ runner.os }}-hugo-${{ env.HUGO_VERSION }}-${{ hashFiles('hugo.toml', 'go.mod', 'go.sum', 'package*.json') }}
