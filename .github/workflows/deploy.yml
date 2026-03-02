@@ -92,7 +92,7 @@ jobs:
           path: public-pages
 
       - name: Upload Worker asset bundle
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: site-worker
           path: public-worker
